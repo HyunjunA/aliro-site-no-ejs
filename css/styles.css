@@ -114,7 +114,8 @@ h1, .h1 {
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
+    font-size: 5rem;
   }
 }
 
@@ -123,7 +124,8 @@ h2, .h2 {
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 3rem;
   }
 }
 
@@ -491,6 +493,12 @@ progress {
 .lead {
   /* font-size: 1.25rem; */
   font-size:1.8rem;
+  font-weight: 300;
+}
+
+.lead-2 {
+  font-size: 1.25rem;
+  /* font-size:1.8rem; */
   font-weight: 300;
 }
 
@@ -11323,8 +11331,10 @@ html {
 
 aside,
 section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  /* padding-top: 5rem;
+  padding-bottom: 5rem; */
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 .app-badge {
@@ -11426,6 +11436,72 @@ section {
   height: 100%;
 }
 
+
+
+
+
+
+
+
+/* The laptop with borders */
+.laptop {
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  left: 50%;
+  position: absolute;
+  width: 1366px;
+  height: 800px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: black;
+  border-width: 24px 24px 80px;
+  background-color: black;
+
+}
+
+/* The keyboard of the laptop */
+.laptop:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1600px;
+  height: 60px;
+  margin: 80px 0 0 -110px;
+  background: black;
+  border-radius: 6px;
+}
+
+/* The top of the keyboard */
+.laptop:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  bottom: -110px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  background: #f1f1f1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 1;
+}
+
+/* The screen (or content) of the device */
+.laptop .content {
+  width: 1366px;
+  height: 800px;
+  overflow: hidden;
+  border: none;
+}
+
+
+
+
+
 section.cta {
   position: relative;
   padding: 15rem 0;
@@ -11447,6 +11523,32 @@ section.cta:before {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+
+
+
+section.nocta {
+  position: relative;
+  padding: 15rem 0;
+  /* background-image: url("https://source.unsplash.com/5g41N3uRPf8/1500x800"); */
+  /* background-image:  url("../assets/img/handwithpan.jpg"); */
+  /* background-color: #fff; */
+  background-position: center;
+  background-size: cover;
+}
+section.nocta .nocta-content {
+  position: relative;
+  z-index: 1;
+}
+section.nocta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 
 .icon-feature {
   font-size: 4rem;
@@ -11649,9 +11751,7 @@ footer a:hover, footer a:active, footer a:focus {
 
 
 
-.max-w-1680 {
-  max-width: 1680px;
-}
+
 
 
 
@@ -11669,4 +11769,18 @@ footer a:hover, footer a:active, footer a:focus {
 .text-purple-default {
   --tw-text-opacity: 1;
   color: rgb(52 37 93/var(--tw-text-opacity));
+}
+
+
+
+
+.max-w-1680 {
+  max-width: 1680px;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.relative {
+  position: relative;
 }
