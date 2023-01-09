@@ -7,6 +7,7 @@ package-lock.json
 package.json
 tests/
 
+Videos/temp_video_steps.mp4
 Videos/temp_video_steps_origin.mp4
 Videos/temp_video_steps_slower.mp4
 Videos/temp_video_steps.mov
