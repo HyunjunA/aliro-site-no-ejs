@@ -1,6 +1,3 @@
-# exclude the .vscode folder
-*.mp4
-*.mov
 js/gooana.js
 node_modules
 aliro.html
@@ -9,6 +6,11 @@ index.html
 package-lock.json
 package.json
 tests/
+
+Videos/temp_video_steps_origin.mp4
+Videos/temp_video_steps_slower.mp4
+Videos/temp_video_steps.mov
+Videos/video.mp4
 
 .vscode/*
 !.vscode/settings.json
