@@ -11784,3 +11784,10 @@ footer a:hover, footer a:active, footer a:focus {
 .relative {
   position: relative;
 }
+
+
+video {
+  /* width: 100%; */
+  max-width: 100%;
+  height: auto;
+}
